@@ -12,8 +12,11 @@ vim.opt.wrap = false
 
 vim.opt.termguicolors = true
 
--- disable netrw
+-- Disable netrw.
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 -- vim.g.netrw_banner = 0
 -- vim.g.netrw_winsize = 15
+
+-- Disable always copy to system clipboard.
+vim.o.clipboard = ''
