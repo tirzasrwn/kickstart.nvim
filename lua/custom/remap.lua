@@ -38,7 +38,7 @@ vim.keymap.set('n', '<leader>lr', vim.lsp.buf.references, { desc = 'references' 
 vim.keymap.set('n', '<leader>ln', vim.lsp.buf.rename, { desc = 'rename' })
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format, { desc = 'format' })
 vim.keymap.set('i', '<C-h>', vim.lsp.buf.signature_help, { desc = 'signature_help' })
-vim.keymap.set('n', '<C-n>', '<cmd>Lexplore<CR>')
+vim.keymap.set('n', '<C-n>', '<cmd>NvimTreeToggle<CR>')
 -- telescope
 -- fix winblend in transparent
 vim.keymap.set('n', '<leader>/', function()

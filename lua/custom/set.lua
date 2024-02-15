@@ -12,5 +12,8 @@ vim.opt.wrap = false
 
 vim.opt.termguicolors = true
 
-vim.g.netrw_banner = 0
-vim.g.netrw_winsize = 30
+-- disable netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+-- vim.g.netrw_banner = 0
+-- vim.g.netrw_winsize = 15
