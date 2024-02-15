@@ -31,6 +31,7 @@ local servers = {
   marksman = {},
   bashls = {},
   rust_analyzer = {},
+  texlab = {},
 
   lua_ls = {
     Lua = {
