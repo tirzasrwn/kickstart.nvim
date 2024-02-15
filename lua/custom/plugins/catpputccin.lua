@@ -6,6 +6,9 @@ return {
     require('catppuccin').setup {
       flavour = 'macchiato',
       transparent_background = true,
+      integrations = {
+        fidget = false,
+      },
     }
     vim.cmd.colorscheme 'catppuccin'
   end,
