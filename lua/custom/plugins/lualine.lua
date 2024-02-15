@@ -12,6 +12,8 @@ return {
         disabled_filetypes = {
           'netrw',
           'NvimTree',
+          'diff',
+          'undotree',
         },
       }
     })
