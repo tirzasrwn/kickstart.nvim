@@ -39,3 +39,11 @@ vim.keymap.set('n', '<leader>ln', vim.lsp.buf.rename, { desc = 'rename' })
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format, { desc = 'format' })
 vim.keymap.set('i', '<C-h>', vim.lsp.buf.signature_help, { desc = 'signature_help' })
 vim.keymap.set('n', '<C-n>', '<cmd>Lexplore<CR>')
+-- telescope
+-- fix winblend in transparent
+vim.keymap.set('n', '<leader>/', function()
+  -- You can pass additional configuration to telescope to change theme, layout, etc.
+  require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
+    previewer = false,
+  })
+end, { desc = '[/] Fuzzily search in current buffer' })
