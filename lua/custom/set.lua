@@ -11,3 +11,6 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.opt.termguicolors = true
+
+vim.g.netrw_banner = 0
+vim.g.netrw_winsize = 30
