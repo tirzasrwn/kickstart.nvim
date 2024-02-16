@@ -15,7 +15,10 @@ vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 
 -- delete into blackhole buffer and paste
-vim.keymap.set('x', '<leader>p', [["_dP]])
+vim.keymap.set({ 'x', 'v' }, '<leader>P', [["_dP]])
+
+-- paste from system clipboard
+vim.keymap.set('n', '<leader>p', [["+p]])
 
 -- yank into system clipboard
 vim.keymap.set({ 'n', 'v', 'x' }, '<leader>y', [["+y]])
@@ -34,7 +37,6 @@ vim.keymap.set('n', '<leader>k', '<cmd>lnext<CR>zz')
 vim.keymap.set('n', '<leader>j', '<cmd>lprev<CR>zz')
 
 -- lsp
-vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = '[G]oto [D]efinition' })
 vim.keymap.set('n', '<leader>lw', vim.lsp.buf.workspace_symbol, { desc = 'workspace_symbol' })
 vim.keymap.set('n', '<leader>lo', vim.diagnostic.open_float, { desc = 'diagnostic.open_float' })
 vim.keymap.set('n', '[d', vim.diagnostic.goto_next, { desc = 'diagnostic.goto_next' })
