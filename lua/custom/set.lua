@@ -1,3 +1,7 @@
+-- Disable cursor styling.
+vim.opt.guicursor = ""
+
+-- Set linenumber format.
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
