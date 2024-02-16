@@ -38,7 +38,7 @@ return {
     vim.keymap.set("n", "h3", '<cmd>lua require("harpoon.ui").nav_file(3)<CR>')
     vim.keymap.set("n", "h4", '<cmd>lua require("harpoon.ui").nav_file(4)<CR>')
 
-    vim.keymap.set("n", "L", '<cmd>lua require("harpoon.ui").nav_next()<CR>')
-    vim.keymap.set("n", "H", '<cmd>lua require("harpoon.ui").nav_prev()<CR>')
+    vim.keymap.set("n", "<Tab>", '<cmd>lua require("harpoon.ui").nav_next()<CR>')
+    vim.keymap.set("n", "<S-Tab>", '<cmd>lua require("harpoon.ui").nav_prev()<CR>')
   end
 }
