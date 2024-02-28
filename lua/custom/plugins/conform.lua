@@ -5,6 +5,7 @@ return {
     require('conform').setup {
       lsp_fallback = true,
 
+      -- https://github.com/stevearc/conform.nvim?tab=readme-ov-file#list_all_formatters
       formatters_by_ft = {
         lua = { 'stylua' },
 
@@ -17,6 +18,7 @@ return {
 
         sh = { 'shfmt' },
         go = { 'goimports', 'gofumpt' },
+        sql = { 'sql_formatter' },
       },
 
       -- adding same formatter for multiple filetypes can look too much work for some

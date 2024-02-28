@@ -14,6 +14,7 @@ return {
           'cpp',
           'go',
           'lua',
+          'luadoc',
           'python',
           'rust',
           'tsx',
@@ -22,19 +23,20 @@ return {
           'vimdoc',
           'vim',
           'bash',
-          "html",
-          "css",
-          "markdown",
-          "markdown_inline",
-          "gomod",
-          "java",
-          "gitignore",
-          "json",
-          "yaml",
-          "dockerfile",
-          "make",
-          "xml",
-          "latex",
+          'html',
+          'css',
+          'markdown',
+          'markdown_inline',
+          'gomod',
+          'java',
+          'gitignore',
+          'json',
+          'yaml',
+          'dockerfile',
+          'make',
+          'xml',
+          'latex',
+          'sql',
         },
 
         -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
@@ -102,5 +104,5 @@ return {
         },
       }
     end, 0)
-  end
+  end,
 }
