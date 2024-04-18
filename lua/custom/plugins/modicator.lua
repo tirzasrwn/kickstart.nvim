@@ -14,7 +14,7 @@ return {
   config = function()
     require('modicator').setup({
       -- Show warning if any required option is missing
-      show_warnings = true,
+      show_warnings = false,
       highlights = {
         -- Default options for bold/italic
         defaults = {
