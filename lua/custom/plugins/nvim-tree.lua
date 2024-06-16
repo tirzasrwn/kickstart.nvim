@@ -9,7 +9,11 @@ return {
     require("nvim-tree").setup({
       renderer = {
         root_folder_label = false,
-      }
+      },
+      update_focused_file = {
+        enable = true,
+        update_cwd = false,
+      },
     })
   end,
 }
