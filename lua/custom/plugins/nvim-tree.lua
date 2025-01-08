@@ -1,12 +1,12 @@
 return {
-  "nvim-tree/nvim-tree.lua",
-  version = "*",
+  'nvim-tree/nvim-tree.lua',
+  version = '*',
   lazy = false,
   dependencies = {
-    "nvim-tree/nvim-web-devicons",
+    'nvim-tree/nvim-web-devicons',
   },
   config = function()
-    require("nvim-tree").setup({
+    require('nvim-tree').setup {
       renderer = {
         root_folder_label = false,
       },
@@ -14,6 +14,9 @@ return {
         enable = true,
         update_cwd = false,
       },
-    })
+      view = {
+        side = 'right',
+      },
+    }
   end,
 }
